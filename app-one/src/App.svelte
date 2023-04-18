@@ -1,5 +1,5 @@
 <script>
-	export let name;
+	let name = 'Sandi';
 	export let age;
 
 	const incrementAge = () => {
@@ -14,4 +14,4 @@
 </style>
 
 <h1>Hello {name}, and my age is {age}!</h1>
-<button>Change age</button>
+<button on:click={incrementAge}>Change age</button>
